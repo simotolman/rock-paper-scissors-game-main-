@@ -38,7 +38,6 @@ If the player wins, they gain 1 point. If the computer wins, the player loses on
 
 # Author
 
-- Website - [Abouhilal badr](https://www.badrabouhilal.com)
-- Frontend Mentor - [@abouhilalbadr](https://www.frontendmentor.io/profile/abouhilalbadr)
-- Twitter - [@AbouhilalBadr](https://www.twitter.com/AbouhilalBadr)
+- Website - [TOLMAN MOHAMED / SALMA BELGADI]
+
 
