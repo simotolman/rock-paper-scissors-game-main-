@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-barlow bg-gradient-to-b from-background-radialFrom to-background-radialTo w-full min-h-screen;
+}
+
+.btn-icon {
+  @apply flex justify-center items-center absolute w-40 h-40 bg-gradient-to-r rounded-full hover:scale-125 transition-all
+}
+
+.btn-icon-result {
+  @apply flex justify-center items-center w-72 h-72 bg-gradient-to-r rounded-full hover:scale-125 transition-all;
+}
+
+.ripple::after {
+  @apply opacity-0 flex flex-row justify-center items-center absolute top-0 left-0 right-0 bottom-0 content-[""] h-full w-full rounded-full;
+  border: 24px solid rgba(255, 255, 255, 0.4);
+  animation: ripple 2s cubic-bezier(0.65, 0, 0.34, 1) 0s infinite;
+  z-index: -1;
+}
+.ripple::before {
+  @apply opacity-0 flex flex-row justify-center items-center absolute top-0 left-0 right-0 bottom-0 content-[""] h-full w-full rounded-full;
+  border: 24px solid rgba(255, 255, 255, 0.4);
+  animation: ripple 2s cubic-bezier(0.65, 0, 0.34, 1) 0.5s infinite;
+  z-index: -1;
+}
+
+@keyframes ripple {
+  from {
+    opacity: 1;
+    transform: scale3d(0.75, 0.75, 1);
+  }
+  to {
+    opacity: 0;
+    transform: scale3d(1.5, 1.5, 1);
+  }
+}
